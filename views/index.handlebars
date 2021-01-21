@@ -5,8 +5,7 @@
     {{#each burger_name}}
     {{#unless this.devoured}}
     <p>{{this.burger_name}}</p>
-    <button class="devour" value={{this.id}}>Devour</button>
-    {{!--{{> burgers/burger-block devoured=true}} --}}
+    <button class="devour" data-id={{this.id}}>Devour</button>
     {{/unless}}
     {{/each}}
 </ul>
@@ -15,8 +14,8 @@
 
 <ul>
     {{#each burger_name}}
-    {{#if devoured}}
-    {{!-- {{> burgers/burger-block devoured=false}} --}}
+    {{#if this.devoured}}
+    <p>{{this.burger_name}}</p>
     {{/if}}
     {{/each}}
 </ul>
