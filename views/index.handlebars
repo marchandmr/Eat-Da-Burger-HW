@@ -2,9 +2,11 @@
 
 
 <ul>
-    {{#each burgers}}
-    {{#unless devoured}}
-    {{> burgers/burger-block sleep=true}}
+    {{#each burger_name}}
+    {{#unless this.devoured}}
+    <p>{{this.burger_name}}</p>
+    <button class="devour" value={{this.id}}>Devour</button>
+    {{!--{{> burgers/burger-block devoured=true}} --}}
     {{/unless}}
     {{/each}}
 </ul>
@@ -12,9 +14,9 @@
 <h2>Burgers you devoured!</h2>
 
 <ul>
-    {{#each burgers}}
+    {{#each burger_name}}
     {{#if devoured}}
-    {{> burgers/burger-block sleep=false}}
+    {{!-- {{> burgers/burger-block devoured=false}} --}}
     {{/if}}
     {{/each}}
 </ul>
