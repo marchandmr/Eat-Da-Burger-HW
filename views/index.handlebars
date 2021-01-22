@@ -1,31 +1,54 @@
-<h1>Eat Da Burger!</h1>
+<div class="jumbotron">
+    <h1 class="display-4">Eat Da Burger!</h1>
+</div>
 
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <h2 class="newBurgerHead">Burgers to be devoured!</h2>
+            <ul class="notDevoured">
+                {{#each burger_name}}
+                {{#unless this.devoured}}
 
-<ul>
-    {{#each burger_name}}
-    {{#unless this.devoured}}
-    <p>{{this.burger_name}}</p>
-    <button class="devour" data-id={{this.id}}>Devour</button>
-    {{/unless}}
-    {{/each}}
-</ul>
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="burgerName">{{this.burger_name}}</h2>
+                        <p><button class="devour" data-id={{this.id}}>Devour</button></p>
+                    </div>
+                </div>
+                {{/unless}}
+                {{/each}}
+            </ul>
 
-<h2>Burgers you devoured!</h2>
+        </div>
+        <div class="col-sm">
+            <div>
+                <img class="mainimage" src="/assets/img/hamburger.webp">
+            </div>
+            <h2 class="add">Add a Burger</h2>
+            <form class="create-form">
 
-<ul>
-    {{#each burger_name}}
-    {{#if this.devoured}}
-    <p>{{this.burger_name}}</p>
-    {{/if}}
-    {{/each}}
-</ul>
+                <div class="form-group">
+                    <label for="ca"></label>
+                    <input type="text" id="ca" name="name">
+                </div>
+                <button type="submit" class="submit">Submit!</button>
+            </form>
+        </div>
+        <div class="col-sm">
+            <h2 class="devheading"> Burgers you devoured!</h2>
 
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-    <div class="form-group">
-        <label for="ca">Burger Name:</label>
-        <input type="text" id="ca" name="name">
+            <ul class="devoured">
+                {{#each burger_name}}
+                {{#if this.devoured}}
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="burgerName">{{this.burger_name}}</h2>
+                    </div>
+                </div>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
     </div>
-    <button type="submit">Add Burger</button>
-</form>
+</div>

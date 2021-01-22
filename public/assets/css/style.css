@@ -1,0 +1,155 @@
+body {
+    
+    background: radial-gradient(#e9c46a, #E76F51);
+}
+
+h1 {
+    text-align: center;
+    color: #e76f51;
+}
+
+
+ h2{
+    color:#2a9d8f;
+} 
+p{
+    color: #2a9d8f;
+}
+
+button {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    height: 4px;
+    line-height: 4px;
+    color: #E9C46A;
+    font-family: Brush Script MT;
+    width: 131px;
+    font-size: 21px;
+    font-weight: 100;
+    padding: 19px;
+    background-color: #2A9D8F;
+    -webkit-box-shadow: 1px 1px 20px 0 #E76F51;
+    -moz-box-shadow: 1px 1px 20px 0 #E76F51;
+    box-shadow: 1px 1px 20px 0 #E76F51;
+    border: solid #FFAE00 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+ button:hover {
+    border: solid #337FED 1px;
+    background: #264653;
+    background-image: -webkit-linear-gradient(top, #264653, #264653);
+    background-image: -moz-linear-gradient(top, #264653, #264653);
+    background-image: -ms-linear-gradient(top, #264653, #264653);
+    background-image: -o-linear-gradient(top, #264653, #264653);
+    background-image: -webkit-gradient(to bottom, #264653, #264653);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+ }
+
+ .submit {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    height: 4px;
+    line-height: 4px;
+    color: #E9C46A;
+    font-family: Brush Script MT;
+    width: 131px;
+    font-size: 21px;
+    font-weight: 100;
+    padding: 19px;
+    background-color: #2A9D8F;
+    -webkit-box-shadow: 1px 1px 20px 0 #E76F51;
+    -moz-box-shadow: 1px 1px 20px 0 #E76F51;
+    box-shadow: 1px 1px 20px 0 #E76F51;
+    border: solid #FFAE00 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+   margin-left: 140px;
+   margin-top: 20px;
+  
+   
+ }
+ 
+ .submit:hover {
+    border: solid #337FED 1px;
+    background: #264653;
+    background-image: -webkit-linear-gradient(top, #264653, #264653);
+    background-image: -moz-linear-gradient(top, #264653, #264653);
+    background-image: -ms-linear-gradient(top, #264653, #264653);
+    background-image: -o-linear-gradient(top, #264653, #264653);
+    background-image: -webkit-gradient(to bottom, #264653, #264653);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+ }
+ .card{
+width: 100%;
+background-color: #f4a261;
+ }
+
+ .jumbotron{
+   background-color: #2a9d8f ;
+     height: 70px;
+  
+    
+ }
+ .display-4{
+    
+    font-family: 'Permanent Marker', cursive;
+ }
+
+
+
+
+ .mainimage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+     width: 40%;
+     padding-bottom: 100px;
+
+ }
+ .add
+ {
+     text-align: center;
+ }
+
+ .newBurgerHead
+ {
+     text-align: center;
+     text-decoration: underline;
+     font-family: 'Permanent Marker', cursive;
+ }
+
+ .devheading
+ {
+     text-align: center;
+     text-decoration: underline;
+     font-family: 'Permanent Marker', cursive;
+ }
+
+ .form-group
+ {
+     text-align: center;
+ }
+
+ .burgerName
+ {
+    font-family: 'Gorditas', cursive;
+    font-family: 'Permanent Marker', cursive;
+    color:  #e76f51;
+ }
+
+ .add{
+    font-family: 'Permanent Marker', cursive;
+ }
